@@ -1,8 +1,11 @@
 # The Jarvis project
 The goal of this project is to create a machine learning model which will be able to read the hand location and gesture from camera feed in real-time. The model will then be paired with a program, which will use the data to control the PC, as if the hand was a mouse.
 
-In case it's hard for you to imagine, this is the aim:
+**In case it's hard for you to imagine, this is what I aim for:**
+
 ![](https://media.giphy.com/media/g4sCZhKykg1z2/giphy.gif)
+
+This is also the first step towards developing AR software which is going to imitate Apple Vision Pro, which I was heavily inspired by. Not to mention the titular Jarvis and how Tony Stark interacts with him.
 
 ## Todo
 - [x] find a way to extract frames from videos
