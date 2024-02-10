@@ -16,6 +16,8 @@ This is also the first step towards developing AR software which is going to imi
 - [ ] implement clicking
 - [ ] implement grabbing/dragging and dropping
 - [ ] implement changing the virtual screen through waving
+- [ ] support for extracting frames from other video formats, like .mp4
 
 ## References
 - [Image classifier and processing tutorial](https://medium.com/analytics-vidhya/image-processing-with-python-applications-in-machine-learning-17d7aac6bc97)
+- [Transform4Europe ML course by d-tomas from University of Alicante](https://github.com/d-tomas/transform4europe)

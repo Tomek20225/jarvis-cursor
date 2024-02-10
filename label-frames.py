@@ -35,13 +35,13 @@ class ImageLabeler:
         try:
             with open('labels.json', 'r') as file:
                 self.labels = json.load(file)
-            # Start from the first unlabeled image
+
             for i, img in enumerate(self.image_files):
                 if img not in self.labels:
                     self.current_index = i
                     break
             else:
-                self.current_index = len(self.image_files)  # All images labeled
+                self.current_index = len(self.image_files)
         except FileNotFoundError:
             self.current_index = 0
 
@@ -58,7 +58,7 @@ class ImageLabeler:
             self.canvas.create_image(0, 0, anchor=tk.NW, image=self.photo)
             self.update_status()
         else:
-            messagebox.showinfo("Complete", "All images have been labeled.")
+            messagebox.showinfo("Complete", "All images have been labeled")
             self.root.destroy()
 
     def on_click(self, event):
@@ -82,7 +82,7 @@ if __name__ == "__main__":
     root = tk.Tk()
     root.title("Image Labeler")
 
-    image_dir = filedialog.askdirectory(title="Select Image Directory")
+    image_dir = filedialog.askdirectory(title="Select image directory")
     if image_dir:
         app = ImageLabeler(root, image_dir)
         root.mainloop()
